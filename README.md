@@ -3,7 +3,7 @@
 This repository contains an integration between AWS IAM and [Indent](https://indent.com). Once deployed, you will be able to use this integration with Indent to:
 
 - PullUpdate
-- ApplyPullUpdate
+- ApplyUpdate
 
 ## Quicklinks
 
