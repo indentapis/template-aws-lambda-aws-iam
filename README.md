@@ -7,13 +7,8 @@ This repository contains an integration between AWS IAM and [Indent](https://ind
 
 ## Quicklinks
 
-- [Indent Documentation](https://indent.com/docs)
+- [Indent Documentation Index](https://indent.com/docs)
 - [Indent Support](https://support.indent.com)
-
-**In this repo**
-
-- [GitHub Secrets](./settings/secrets/actions)
-- [GitHub Actions](./actions/workflows/deploy.yaml)
 
 ## Configuration
 
@@ -65,7 +60,7 @@ Before you deploy these webhooks for the first time, [create an S3 bucket](https
 
 ### Actions secrets
 
-Visit <a href="https://indent.com/docs" target="_blank">this link</a> to our documentation for information on setting up GitHub Secrets in this repository.
+Visit <a href="https://indent.com/docs/integrations/aws-iam" target="_blank">this link</a> to our documentation for information on setting up GitHub Secrets in this repository.
 
 ## Deployment
 
