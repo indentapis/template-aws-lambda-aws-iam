@@ -10,8 +10,8 @@ terraform {
 
 # Indent + AWS IAM Integration
 
-# Details: https://github.com/indentapis/integrations/tree/eb128de119f3d617bbba1da3e7425ea46ef1213a/packages/beta/indent-integration-aws-iam
-# Last Change: https://github.com/indentapis/integrations/commit/eb128de119f3d617bbba1da3e7425ea46ef1213a
+# Details: https://github.com/indentapis/integrations/tree/e50005936c927b792ce3fa7ffb32bea458f7fff2/packages/beta/indent-integration-aws-iam
+# Last Change: https://github.com/indentapis/integrations/commit/e50005936c927b792ce3fa7ffb32bea458f7fff2
 
 module "idt-aws-iam-webhook" {
   source                = "git::https://github.com/indentapis/integrations//terraform/modules/indent_runtime_aws_lambda"
@@ -19,8 +19,8 @@ module "idt-aws-iam-webhook" {
   indent_webhook_secret = var.indent_webhook_secret
   artifact = {
     bucket       = "indent-artifacts-us-west-2"
-    function_key = "webhooks/aws/lambda/aws-iam-eb128de119f3d617bbba1da3e7425ea46ef1213a-function.zip"
-    deps_key     = "webhooks/aws/lambda/aws-iam-eb128de119f3d617bbba1da3e7425ea46ef1213a-deps.zip"
+    function_key = "webhooks/aws/lambda/aws-iam-e50005936c927b792ce3fa7ffb32bea458f7fff2-function.zip"
+    deps_key     = "webhooks/aws/lambda/aws-iam-e50005936c927b792ce3fa7ffb32bea458f7fff2-deps.zip"
   }
   env = {
     DEFAULT_USER_PW = var.default_user_pw
