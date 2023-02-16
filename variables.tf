@@ -19,3 +19,21 @@ variable "default_user_pw" {
   sensitive = true
 }
 
+variable "indent_aws_direct_assignment" {
+  type      = string
+  default   = ""
+  sensitive = true
+}
+
+variable "aws_sts_assume_role" {
+  type      = string
+  default   = ""
+  sensitive = true
+}
+
+variable "aws_sts_external_id" {
+  type      = string
+  default   = ""
+  sensitive = true
+}
+
