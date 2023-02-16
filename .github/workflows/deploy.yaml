@@ -68,6 +68,9 @@ jobs:
         env:
           TF_VAR_indent_webhook_secret: ${{ secrets.INDENT_WEBHOOK_SECRET }}
           TF_VAR_default_user_pw: ${{ secrets.DEFAULT_USER_PW }}
+          TF_VAR_indent_aws_direct_assignment: ${{ secrets.INDENT_AWS_DIRECT_ASSIGNMENT }}
+          TF_VAR_aws_sts_assume_role: ${{ secrets.AWS_STS_ASSUME_ROLE }}
+          TF_VAR_aws_sts_external_id: ${{ secrets.AWS_STS_EXTERNAL_ID }}
       - uses: actions/github-script@0.9.0
         if: github.event_name == 'pull_request'
         env:
@@ -99,6 +102,9 @@ jobs:
         env:
           TF_VAR_indent_webhook_secret: ${{ secrets.INDENT_WEBHOOK_SECRET }}
           TF_VAR_default_user_pw: ${{ secrets.DEFAULT_USER_PW }}
+          TF_VAR_indent_aws_direct_assignment: ${{ secrets.INDENT_AWS_DIRECT_ASSIGNMENT }}
+          TF_VAR_aws_sts_assume_role: ${{ secrets.AWS_STS_ASSUME_ROLE }}
+          TF_VAR_aws_sts_external_id: ${{ secrets.AWS_STS_EXTERNAL_ID }}
       - name: Terraform Output
         if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
         run: terraform output
